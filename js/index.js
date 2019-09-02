@@ -57,6 +57,20 @@ anchors[5].textContent = siteContent.nav["nav-item-6"];
 
 const h1 = document.querySelector('.cta-text h1').textContent = siteContent["cta"]["h1"];
 
+const newH1 = document.querySelector('.cta-text h1');
+newH1.textContent = 'DOM';
+
+const h1Is = document.createElement('h1');
+h1Is.textContent = 'Is';
+
+newH1.appendChild(h1Is);
+
+const h1Awesome = document.createElement('h1');
+h1Awesome.textContent = 'Awesome';
+
+h1Is.appendChild(h1Awesome);
+
+
 const button = document.querySelector('.cta-text button').textContent = siteContent["cta"]["button"];
 
 const ctaImg = document.getElementById('cta-img').setAttribute('src', siteContent["cta"]["img-src"])

@@ -148,10 +148,10 @@ const append = document.createElement('a');
 
 let nav = document.querySelector('nav');
 nav.append(append);
-append.textContent = ('Bye Alex');
+append.textContent = ('Bye Ruiaridh');
 
 const prepend = document.createElement('a');
 
 nav = document.querySelector('nav');
 nav.prepend(prepend);
-prepend.textContent = ('Hi Alex');
+prepend.textContent = ('Hi Ruairidh');

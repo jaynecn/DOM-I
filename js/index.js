@@ -129,6 +129,14 @@ contacth4.textContent = siteContent["contact"]["contact-h4"];
 const pAddress = document.querySelector('.address');
 pAddress.textContent = siteContent["contact"]["address"];
 
+pAddress.textContent = '123 Way 456';
+
+const address2 = document.createElement('p');
+address2.textContent = 'Somewhere, USA';
+
+pAddress.appendChild(address2);
+
+
 const pPhone = document.querySelector('.phone');
 pPhone.textContent = siteContent["contact"]["phone"];
 
@@ -155,3 +163,9 @@ const prepend = document.createElement('a');
 nav = document.querySelector('nav');
 nav.prepend(prepend);
 prepend.textContent = ('Hi Ruairidh');
+
+const blue = document.querySelectorAll('.text-content h4');
+console.log(blue);
+blue.forEach((element) => {
+  element.style.color = 'blue';
+});

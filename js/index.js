@@ -57,6 +57,20 @@ anchors[5].textContent = siteContent.nav["nav-item-6"];
 
 const h1 = document.querySelector('.cta-text h1').textContent = siteContent["cta"]["h1"];
 
+const newH1 = document.querySelector('.cta-text h1');
+newH1.textContent = 'DOM';
+
+const h1Is = document.createElement('h1');
+h1Is.textContent = 'Is';
+
+newH1.appendChild(h1Is);
+
+const h1Awesome = document.createElement('h1');
+h1Awesome.textContent = 'Awesome';
+
+h1Is.appendChild(h1Awesome);
+
+
 const button = document.querySelector('.cta-text button').textContent = siteContent["cta"]["button"];
 
 const ctaImg = document.getElementById('cta-img').setAttribute('src', siteContent["cta"]["img-src"])
@@ -115,6 +129,14 @@ contacth4.textContent = siteContent["contact"]["contact-h4"];
 const pAddress = document.querySelector('.address');
 pAddress.textContent = siteContent["contact"]["address"];
 
+pAddress.textContent = '123 Way 456';
+
+const address2 = document.createElement('p');
+address2.textContent = 'Somewhere, USA';
+
+pAddress.appendChild(address2);
+
+
 const pPhone = document.querySelector('.phone');
 pPhone.textContent = siteContent["contact"]["phone"];
 
@@ -134,10 +156,16 @@ const append = document.createElement('a');
 
 let nav = document.querySelector('nav');
 nav.append(append);
-append.textContent = ('Bye Alex');
+append.textContent = ('Bye Ruiaridh');
 
 const prepend = document.createElement('a');
 
 nav = document.querySelector('nav');
 nav.prepend(prepend);
-prepend.textContent = ('Hi Alex');
+prepend.textContent = ('Hi Ruairidh');
+
+const blue = document.querySelectorAll('.text-content h4');
+console.log(blue);
+blue.forEach((element) => {
+  element.style.color = 'blue';
+});
